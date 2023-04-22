@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+body{
+    background-color: cornflowerblue;
+}
+.card{ 
+    width: 90%;
+    max-width: 476px;   
+    margin: 100px auto 0; 
+    padding: 40px 35px;
+    background-color: burlywood;
+    text-align: center;
+    border-radius: 20px;
+
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 2px solid black;
+    outline: 0;
+    color: black;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    background: transparent;
+}
+.search button{
+    border: 2px solid black;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: transparent;
+    
+}
+.search button img{
+    height: 40px;
+    width: 40px;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col img{
+    width: 100%;
+    height: 100px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+/* api=https://api.openweathermap.org/data/2.5/weather?q=chennai&appid=32e73fe347b35e3e359ac8a9b1fac195&units=metric */
